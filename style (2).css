@@ -1,0 +1,162 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px; /* حشوة الصفحة */
+  background-color: #f0f0f0; /* لون الخلفية */
+  text-align: center; /* محاذاة النص إلى المنتصف بشكل افتراضي */
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center; /* محاذاة النص في الهيدر إلى المنتصف */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3a6cf4;
+}
+
+.navigation a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #3a6cf4;
+}
+
+/* Main Section */
+h2 {
+  font-size: 2em; /* حجم الخط */
+  color: #333; /* لون الخط */
+}
+
+h2 span {
+  display: block; /* جعل النص في سطر منفصل */
+  font-size: 0.6em; /* حجم الخط للنص الفرعي */
+  color: #666; /* لون أفتح للنص الفرعي */
+}
+
+h3 {
+  font-size: 1.5em; /* حجم الخط */
+  color: #555; /* لون الخط */
+  margin: 10px 0; /* مسافة علوية وسفلية */
+}
+
+.main-btn {
+  display: inline-block; /* جعل الزر يتصرف مثل العنصر المضمن */
+  padding: 10px 20px; /* حشوة الزر */
+  margin: 20px 0; /* مسافة علوية وسفلية */
+  background-color: #3a6cf4; /* لون خلفية الزر */
+  color: #fff; /* لون النص */
+  text-decoration: none; /* إزالة التسطير */
+  border-radius: 5px; /* زوايا مدورة */
+  transition: background-color 0.3s; /* تأثير التحويل */
+}
+
+.main-btn:hover {
+  background-color: #2e56c7; /* لون الخلفية عند التمرير */
+}
+
+.social-icons {
+  margin-top: 20px; /* مسافة علوية */
+}
+
+.social-icons a {
+  margin: 0 10px; /* مسافة بين الأيقونات */
+  color: #3a6cf4; /* لون الأيقونات */
+  font-size: 1.5em; /* حجم الأيقونات */
+  transition: color 0.3s; /* تأثير التحويل */
+}
+
+.social-icons a:hover {
+  color: #2e56c7; /* لون الأيقونات عند التمرير */
+}
+
+/* Projects Section */
+.projects .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project-card {
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* محاذاة العناصر عموديًا */
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px; /* عرض أقصى للبطاقة */
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  flex: 1; /* تسمح للصورة بأخذ المساحة المتاحة */
+  max-width: 50%; /* تعيين عرض أقصى للصورة */
+}
+
+.project-image img {
+  width: 100%; /* عرض الصورة بالكامل */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+.project-info {
+  flex: 2; /* تسمح لمحتوى المعلومات بأخذ المساحة المتاحة */
+  padding-left: 10px; /* مسافة بين الصورة والمحتوى */
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  body {
+      padding: 10px; /* تقليل الحشوة للهواتف */
+      text-align: left; /* جعل النص يتجه نحو اليسار عند عرض الصفحة على الهواتف */
+  }
+
+  .logo {
+      font-size: 1.5em;
+  }
+
+  .navigation a {
+      margin-left: 5px;
+      font-size: 0.9em;
+  }
+
+  .projects .content {
+      padding: 10px;
+  }
+
+  .project-card {
+      width: 95%;
+  }
+
+  .project-info {
+      padding-left: 5px; /* تقليل الحشوة للمحتوى */
+  }
+
+  h2 {
+      font-size: 1.5em; /* تعديل حجم الخط للأجهزة الصغيرة */
+  }
+
+  h2 span {
+      font-size: 0.6em; /* تعديل حجم النص الفرعي لجعله أصغر */
+  }
+
+  h3 {
+      font-size: 1.2em; /* تعديل حجم الخط للأجهزة الصغيرة */
+  }
+
+  .main-btn {
+      padding: 8px 16px; /* تعديل حشوة الزر للأجهزة الصغيرة */
+      font-size: 1em; /* ضبط حجم الخط للزر */
+  }
+
+  .social-icons a {
+      font-size: 1.2em; /* تعديل حجم الأيقونات للأجهزة الصغيرة */
+  }
+}

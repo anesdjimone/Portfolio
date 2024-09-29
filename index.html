@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anes Djellouli</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Anes</a>
+    <nav class="navigation">
+        <a href="projects.html">Projects</a> <!-- رابط لصفحة المشاريع الجديدة -->
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>  
+
+  <section class="main">
+    <div>
+      <h2>Hello, I'm Anes<br><span>Designer and Web Developer</span></h2>
+      <h3>Graphic Designer, Website and Interface Developer</h3>
+      <a href="projects.html" class="main-btn">View My Work</a> <!-- رابط لصفحة المشاريع الجديدة -->
+      <div class="social-icons">
+         <a href="https://www.instagram.com/djelloulianes/?hl=ar" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+         <a href="https://www.facebook.com/anes.djellouli.7" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+         <a href="https://t.me/Anesdjellouli" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+      </div>      
+  </section>
+
+  <section class="cards contact" id="contact">
+    <h2 class="title">Let's work together</h2>
+    <div class="content">
+        <div class="card" id="phone-card">
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="card" id="email-card">
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-title">Copyrights @ <span>Anes</span></p>
+  </footer>
+
+  <script>
+    const phoneCard = document.getElementById('phone-card');
+    const emailCard = document.getElementById('email-card');
+
+    phoneCard.addEventListener('click', () => {
+        alert('Call Me: 0673772378'); // إظهار تنبيه بالرقم
+    });
+
+    emailCard.addEventListener('click', () => {
+        alert('Email Me: anesdjimone@gmail.com'); // إظهار تنبيه بالبريد الإلكتروني
+    });
+  </script>
+</body>
+</html>
